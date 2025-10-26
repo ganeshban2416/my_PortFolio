@@ -42,11 +42,11 @@ export default function Greeting() {
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <a
-                    href={require("./resume.pdf")}
-                    download="Resume.pdf"
-                    className="download-link-button"
-                  >
-                    <Button text="Download my resume" />
+                    href={require("./updatedresume.pdf")}
+                    download="containers/greeting/updatedresume.pdf"
+                    className="download-link-button">
+
+                    <Button text="resume"/>
                   </a>
                 )}
               </div>

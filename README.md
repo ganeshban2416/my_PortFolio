@@ -180,7 +180,7 @@ const openSource = { .... }
 
 const bigProjects = { .... }
 
-const achievementSection = { .... }
+const AchievementSection = { .... }
 
 const blogSection = { .... }
 

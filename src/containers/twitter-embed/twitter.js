@@ -2,8 +2,10 @@ import React, {Suspense, useContext} from "react";
 import "./twitter.scss";
 import Loading from "../loading/Loading";
 import {TwitterTimelineEmbed} from "react-twitter-embed";
-import {twitterDetails} from "../../portfolio";
 import StyleContext from "../../contexts/StyleContext";
+import { twitterDetails } from "../../portfolio";
+
+
 
 const renderLoader = () => <Loading />;
 const cantDisplayError =
@@ -32,7 +34,7 @@ export default function Twitter() {
       <Suspense fallback={renderLoader()}>
         <div className="tw-main-div" id="twitter">
           <div className="centerContent">
-            <TwitterTimelineEmbed
+            {/* <TwitterTimelineEmbed
               sourceType="profile"
               screenName={twitterDetails.userName}
               options={{height: 400, width: {widthScreen}}}
@@ -43,7 +45,7 @@ export default function Twitter() {
               theme={isDark ? "dark" : "light"}
               noFooter={true}
               onload={timeOut()}
-            />
+            /> */}
           </div>
         </div>
       </Suspense>
